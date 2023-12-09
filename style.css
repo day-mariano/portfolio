@@ -19,6 +19,7 @@ body {
 #logo {
   color: rgb(70, 70, 89);
   font-size: 18px;
+  min-width: 180px;
 }
 
 #logo:hover {
@@ -95,10 +96,14 @@ h3 {
 }
 .icones {
   margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .icons {
   width: 50px;
   margin: 1rem;
+  
 }
 
 #sobre {
@@ -130,6 +135,7 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2rem;
 }
 
 #contato p {
@@ -168,3 +174,34 @@ footer {
   align-items: center;
   font-size: 14px;margin-top: 1rem;
 }
+ @media (max-width: 563px) {
+  .hero {
+    flex-direction: column;
+  }
+  nav {
+    justify-content: flex-end;
+  }
+  .navButtons {
+    display: none;
+  }
+  #fotoperfil {
+    width: 200px;
+  }
+  .hero h2 {
+    font-size: 20px;
+  }
+  .conteudoSobre {
+    flex-direction: column;
+  }
+  .conteudoSobre {
+    flex-direction: column-reverse;
+  }
+  .imgSobre {
+    margin: 1rem 0;
+    width: 100px;
+    height: 100px;
+  }
+  .WrapperButtonsContato {
+    flex-direction: column;
+  }
+ }
