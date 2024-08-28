@@ -98,7 +98,7 @@ h3 {
   flex-direction: column;
   font-size: smaller;
   align-items: center;
-  margin: 2rem;
+  margin: 1.5rem;
   font-size: 14px;
 }
 .icones {
@@ -111,7 +111,6 @@ h3 {
 .icons {
   width: 50px;
   margin-bottom: 8px;
-  
 }
 
 #sobre {
@@ -138,6 +137,66 @@ h3 {
   max-width: 700px;
   line-height: 2;
 }
+
+#projetos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  /* max-width: 1500px; */
+  margin: auto;
+  /* width: 100%; */
+}
+
+.divProjetos {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  gap: 2rem;
+}
+
+.card {
+  background: rgba(253, 232, 236, 0.482);
+  /* background-color: rgb(246, 245, 245); */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 8px;
+  gap: 2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  /* height: 300px; */
+  width: 800px;
+}
+.cardReverse{
+  flex-direction: row-reverse;
+}
+.tags{
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.tags li {
+  list-style: none;
+  background: #f3406a;
+  color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  margin: 4px;
+  padding: 0 6px;
+  border-radius: 14px;
+  font-size: 14px;
+  /* font-weight: bold; */
+}
+
+#projetos img {
+  width: 400px;
+}
+
 
 #contato {
   display: flex;
@@ -180,7 +239,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 14px;margin-top: 1rem;
+  font-size: 14px;
+  margin-top: 1rem;
 }
  @media (max-width: 563px) {
   .hero {
