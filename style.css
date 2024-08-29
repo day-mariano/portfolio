@@ -193,10 +193,9 @@ h3 {
   /* font-weight: bold; */
 }
 
-#projetos img {
-  width: 400px;
+.imgProjetos {
+  max-width: 400px;
 }
-
 
 #contato {
   display: flex;
@@ -242,6 +241,18 @@ footer {
   font-size: 14px;
   margin-top: 1rem;
 }
+
+@media (max-width: 765px) {
+  .imgProjetos {
+    max-width: 400px;
+  }
+  .card{
+    flex-direction: column;
+    max-width: 500px;
+    padding: auto;
+  }
+}
+
  @media (max-width: 563px) {
   .hero {
     flex-direction: column;
@@ -271,5 +282,12 @@ footer {
   }
   .WrapperButtonsContato {
     flex-direction: column;
+  }
+  .card{
+    max-width: 300px;
+  }
+ 
+  .imgProjetos {
+    width: 250px;
   }
  }
