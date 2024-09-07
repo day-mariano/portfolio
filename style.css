@@ -13,7 +13,7 @@ body {
   padding: 0 2rem;
   margin: 0;
   background-color: white;
-  box-shadow: rgba(100, 100, 111, 0.341) 0px 7px 29px 0px;
+  /* box-shadow: rgba(100, 100, 111, 0.341) 0px 7px 29px 0px; */
   z-index: 2;
 }
 #logo {
@@ -160,17 +160,30 @@ h3 {
 
 .card {
   background: rgba(253, 232, 236, 0.482);
-  /* background-color: rgb(246, 245, 245); */
+  /* background-color: rgb(231, 231, 231); */
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   padding: 1rem;
   border-radius: 8px;
   gap: 2rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
   /* height: 300px; */
   width: 800px;
+}
+.card h4 {
+  font-size: x-large;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.card h5 {
+  font-size: medium;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.card ul {
+  margin: 8px 0;
 }
 .cardReverse{
   flex-direction: row-reverse;
@@ -185,12 +198,35 @@ h3 {
   list-style: none;
   background: #f3406a;
   color: white;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
   margin: 4px;
   padding: 0 6px;
   border-radius: 14px;
   font-size: 14px;
   /* font-weight: bold; */
+}
+
+.tags li:first-child {
+  margin-left: 0;
+}
+
+.linkProjetos {
+  border-style: solid;
+  border-color: #f3406a;
+  border-radius: 6px;
+  width: 70px;
+  padding: 2px 4px;
+  font-size: 14px;
+  text-decoration: none;
+  color:#f3406a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.linkProjetos img {
+  width: 14px;
 }
 
 .imgProjetos {
